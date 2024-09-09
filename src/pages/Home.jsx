@@ -101,7 +101,7 @@ function Home() {
                     }
                 }
 
-                codeblock={`<<!DOCTYPE html>\n<Components>\n<head><title>My App</title>\n</head>\n<body>\n<header><Link href="/">Home</Link></header>\n<nav>\n<Link href="/about">About</Link>\n<Link href="/services">Services</Link>\n<Link href="/contact">Contact</Link>\n</nav>\n</Components>`}
+                codeblock={`<!DOCTYPE html>\n<Components>\n<head><title>My App</title>\n</head>\n<body>\n<header><Link href="/">Home</Link></header>\n<nav>\n<Link href="/about">About</Link>\n<Link href="/services">Services</Link>\n<Link href="/contact">Contact</Link>\n</nav>\n</Components>`}
                 codeColor={"white"}
                 backgroudGradient={"grad"}
             />

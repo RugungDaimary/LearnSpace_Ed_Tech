@@ -80,7 +80,7 @@ const NavBar = ({ setProgress }) => {
         return () => window.removeEventListener('scroll', handleScroll)
     })
 
-    const handelSearch = (e) => {
+    const handleSearch = (e) => {
         e.preventDefault();
         if (searchValue?.length > 0) {
             navigate(`/search/${searchValue}`);
@@ -224,10 +224,11 @@ const NavBar = ({ setProgress }) => {
                                 </li>
                             ))
                         }
-                        <form onSubmit={handelSearch} className='ml-20 flex items-center relative'>
-                            <input value={searchValue} onChange={(e) => { setSearchValue(e.target.value) }} id='searchinput' type="text" placeholder="Search" className=' absolute top-0 ml-30 left-0 border-0 focus:ring-1 ring-richblack-400 rounded-full px-2 py-1 text-[15px] w-50 text-richblack-50 focus:outline-none focus:border-transparent bg-richblack-700' />
-                            <HiSearch type='submit' id='searchicon' size={20} className=" text-richblack-100 top-1 absolute cursor-pointer left-20" />
+                        <form onSubmit={handleSearch} className='ml-20 flex items-center relative'>
+                            <input value={searchValue} onChange={(e) => { setSearchValue(e.target.value) }} id='searchinput' type="text" placeholder="            Search" className=' absolute top-0 ml-30 left-3 border-0 focus:ring-2 ring-richblack-400 rounded-full px-2 py-1 text-[15px] w-50 text-richblack-50 focus:outline-none focus:border-transparent bg-richblack-700' />
+                            <HiSearch type='submit' id='searchicon' size={20} className=" text-richblack-100 top-1 absolute cursor-pointer left-40" />
                         </form>
+
                     </ul>
                 </nav>
 
