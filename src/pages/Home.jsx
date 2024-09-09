@@ -24,11 +24,11 @@ function Home() {
 
     useEffect(() => {
         const fetchCatalogPageData = async () => {
-            
+
                 const result = await getCatalogaPageData(categoryID,dispatch);
                 setCatalogPageData(result);
                 // console.log("page data",CatalogPageData);
-            
+
         }
         if (categoryID) {
             fetchCatalogPageData();
@@ -39,18 +39,20 @@ function Home() {
     <div>
         <div className=' mx-auto relative flex flex-col w-11/12 items-center justify-between text-white '>
             <Link onClick={()=>{dispatch(setProgress(100))}}  to={"/signup"}>
-            <div className=' group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold transition-all duration-200 hover: scale-95 w-fit max-w-maxContent'>
-                <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900'>
-              <p>Become an Instructor</p><FaArrowRight/>
-                </div>
-            </div>
+              <div className=' group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold transition-all duration-200 hover: scale-95 w-fit max-w-maxContent'>
+                  <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900'>
+                    <p>Become an Instructor</p>
+
+                    <FaArrowRight/>
+                  </div>
+              </div>
             </Link>
 
             <div className='text-center text-3xl md:text-4xl font-semibold mt-7'>
-                Empower Your Future With <HighlightText text={"Coding Skills"}/>
+                Empower Your Future With <HighlightText text={" Coding Skills "}/>
             </div>
             <div className=' mt-4 w-[90%] text-left md:text-center text-sm md:text-lg font-bold text-richblack-300'>
-            With our online coding courses, you can learn at your own pace, from anywhere in the world, and get access to a wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors. 
+            With our online coding courses, you can learn at your own pace, from anywhere in the world, and get access to a wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors.
             </div>
 
             <div className='flex flex-row gap-7 mt-8'>
@@ -72,12 +74,12 @@ function Home() {
         </div>
 
         <div >
-            <CodeBlocks 
+            <CodeBlocks
                 position={"lg:flex-row"}
                 heading={
                     <div className=' font-semibold text-2xl lg:text-4xl sm:w-full'>
                         Unlock Your
-                        <HighlightText text={"coding potential"}/>
+                        <HighlightText text={" coding potential "}/>
                         with our online courses
                     </div>
                 }
@@ -93,13 +95,13 @@ function Home() {
                 }
                 ctabtn2={
                     {
-                        btnText: "learn more",
+                        btnText: "Learn more",
                         linkto: "/login",
                         active: false,
                     }
                 }
 
-                codeblock={`<<!DOCTYPE html>\n<html>\n<head><title>Example</title>\n</head>\n<body>\n<h1><ahref="/">Header</a>\n</h1>\n<nav><ahref="one/">One</a><ahref="two/">Two</a><ahref="three/">Three</a>\n</nav>`}
+                codeblock={`<<!DOCTYPE html>\n<Components>\n<head><title>My App</title>\n</head>\n<body>\n<header><Link href="/">Home</Link></header>\n<nav>\n<Link href="/about">About</Link>\n<Link href="/services">Services</Link>\n<Link href="/contact">Contact</Link>\n</nav>\n</Components>`}
                 codeColor={"white"}
                 backgroudGradient={"grad"}
             />
@@ -109,23 +111,23 @@ function Home() {
            Most Popular Courses
         </h2>
         <CourseSlider Courses={CatalogPageData?.selectedCourses}/>
-      </div>       
+      </div>
         <div className=' mx-auto box-content w-full max-w-maxContentTab px- py-12 lg:max-w-maxContent'>
         <h2 className='section_heading mb-6 md:text-3xl text-xl'>
            Students are learning
         </h2>
         <CourseSlider Courses={CatalogPageData?.differentCourses}/>
-      </div>       
+      </div>
 
 
-                {/* Code Section 2 */}
+        {/* Code Section 2 */}
         <div>
-            <CodeBlocks 
+            <CodeBlocks
                 position={"lg:flex-row-reverse"}
                 heading={
                     <div className='text-4xl font-semibold'>
                         Start
-                        <HighlightText text={"coding in seconds"}/>
+                        <HighlightText text={" coding in seconds "}/>
                     </div>
                 }
                 subheading = {
@@ -146,7 +148,7 @@ function Home() {
                     }
                 }
 
-                codeblock={`<<!DOCTYPE html>\n<html>\n<head><title>Example</title>\n</head>\n<body>\n<h1><ahref="/">Header</a>\n</h1>\n<nav><ahref="one/">One</a><ahref="two/">Two</a><ahref="three/">Three</a>\n</nav>`}
+                codeblock={`<script>\nwindow.onload = function() {\n  const text = document.getElementById('animatedText');\n  setTimeout(() => {\n    text.classList.add('visible');\n  }, 500);\n}\n</script>`}
                 codeColor={"text-yellow-25"}
                 backgroudGradient={"grad2"}
             />
@@ -171,7 +173,7 @@ function Home() {
                                 Explore Full Catalog
                                 <FaArrowRight />
                             </div>
-                            
+
                         </CTAButton>
                         <CTAButton active={false} linkto={"/signup"}>
                             <div>
@@ -190,12 +192,12 @@ function Home() {
                 <div className='flex flex-row gap-5 mb-10 mt-[95px]'>
                     <div className='text-4xl font-semibold w-[45%]'>
                         Get the Skills you need for a
-                        <HighlightText text={"Job that is in demand"} />
+                        <HighlightText text={" Job that is in demand "} />
                     </div>
 
                     <div className='flex flex-col gap-10 w-[40%] items-start'>
                     <div className='text-[16px]'>
-                    The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
+                    The modern LearnSpace is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
                     </div>
                     <CTAButton active={true} linkto={"/signup"}>
                         <div>
@@ -205,8 +207,8 @@ function Home() {
                     </div>
 
                 </div>
-                
-                
+
+
 
                 <TimelineSection />
 

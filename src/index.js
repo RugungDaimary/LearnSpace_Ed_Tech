@@ -18,7 +18,7 @@ root.render(
     <Provider store={store}>
         <BrowserRouter>
             <ScrollToTop/>
-                <App />
+            <App />
             <Toaster/>
         </BrowserRouter>
     </Provider>
