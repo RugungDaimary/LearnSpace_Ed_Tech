@@ -37,6 +37,7 @@ function Home() {
     const dispatch = useDispatch();
   return (
     <div>
+         {/* Code Section 1 */}
         <div className=' mx-auto relative flex flex-col w-11/12 items-center justify-between text-white '>
             <Link onClick={()=>{dispatch(setProgress(100))}}  to={"/signup"}>
               <div className=' group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold transition-all duration-200 hover: scale-95 w-fit max-w-maxContent'>
@@ -57,7 +58,8 @@ function Home() {
 
             <div className='flex flex-row gap-7 mt-8'>
                 <CTAButton active={true} linkto={"/signup"}>
-                    Learn More
+                    <div>Learn More</div>
+
                 </CTAButton>
                 <CTAButton active={false} linkto={"/login"} >Book a Demo</CTAButton>
             </div>
@@ -142,7 +144,7 @@ function Home() {
                 }
                 ctabtn2={
                     {
-                        btnText: "learn more",
+                        btnText: "Learn more",
                         linkto: "/login",
                         active: false,
                     }
@@ -176,8 +178,9 @@ function Home() {
 
                         </CTAButton>
                         <CTAButton active={false} linkto={"/signup"}>
+
                             <div>
-                                Learn more
+                              Learn more
                             </div>
                         </CTAButton>
                     </div>

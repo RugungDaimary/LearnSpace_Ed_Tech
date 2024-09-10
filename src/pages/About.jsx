@@ -18,15 +18,22 @@ const About = () => {
       <section className='bg-richblack-700'>
         <div className='relative mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-center text-white'>
             <header className='mx-auto py-20 text-4xl font-semibold lg:w-[70%]'>
-                Driving Innovation in Online Education for a 
-                <HighlightText text={"Brighter Future"}/>
+                Driving Innovation in Online Education for a
+                <HighlightText text={"  Brighter Future "}/>
                 <p className='mx-auto mt-3 text-center text-base font-medium text-richblack-300 lg:w-[95%]'>LearnSpace is at the forefront of driving innovation in online education. We're passionate about creating a brighter future by offering cutting-edge courses, leveraging emerging technologies, and nurturing a vibrant learning community.</p>
             </header>
             <div className='sm:h-[70px] lg:h-[150px]'></div>
-            <div className='absolute bottom-0 left-[50%] grid w-[100%] translate-x-[-50%] translate-y-[30%] grid-cols-3 gap-3 lg:gap-5'>
-                <img src={BannerImage1} alt='Img1' />
-                <img src={BannerImage2}alt='Img2' />
-                <img src={BannerImage3} alt='Img3'/>
+            <div className=' absolute bottom-0 left-[50%] grid w-[100%] translate-x-[-50%] translate-y-[30%] grid-cols-3 gap-3 lg:gap-5'>
+                <div className='shadow-[0_0_20px_0] shadow-[#FC6767]'>
+                  <img src={BannerImage1} alt='Img1' />
+                </div>
+                <div className='shadow-[0_0_20px_0] shadow-[#FC6767]'>
+                   <img src={BannerImage2} alt='Img2' />
+                </div>
+                <div className='shadow-[0_0_20px_0] shadow-[#FC6767]'>
+                  <img src={BannerImage3} alt='Img3'/>
+                </div>
+
             </div>
         </div>
       </section>
@@ -57,7 +64,7 @@ const About = () => {
                 </div>
                 {/* foudning story right box */}
                 <div>
-                    <img className='shadow-[0_0_20px_0] shadow-[#FC6767]'  src={FoundingStory} />
+                    <img className='shadow-[0_0_20px_0] shadow-[#FC6767]' alt='Foundation Story' src={FoundingStory} />
                 </div>
             </div>
 
@@ -78,11 +85,11 @@ const About = () => {
                 </div>
             </div>
         </div>
-      </section>  
+      </section>
 
       {/* section 4 */}
-      <StatsComponent/>  
-      
+      <StatsComponent/>
+
       {/* section 5 */}
       <section className='mx-auto p-2 flex flex-col items-center justify-between gap-5 mb-[140px]'>
         <LearningGrid />

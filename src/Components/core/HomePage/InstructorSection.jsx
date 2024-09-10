@@ -9,11 +9,11 @@ const InstructorSection = () => {
     <div className='mt-16'>
       <div className='flex flex-col md:flex-row gap-20 items-center'>
 
-        <div className='w-[50%]'>
+        <div className='shadow-[0_0_20px_0] shadow-[#FC6767] w-[50%]'>
             <img
                 src={Instructor}
                 alt=""
-                className='shadow-white shadow-[-1.3rem_-1rem_0_0]'
+                className=' shadow-white shadow-[-1.3rem_-1rem_0_0]'
             />
         </div>
 

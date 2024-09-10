@@ -221,6 +221,7 @@ const NavBar = ({ setProgress }) => {
                                             </Link>
                                         )
                                     }
+                                    
                                 </li>
                             ))
                         }
