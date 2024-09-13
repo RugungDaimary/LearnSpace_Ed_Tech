@@ -46,11 +46,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git"
+    "url": "git+https://github.com/RugungDaimary/react-tailwind-css-starter-pack-main"
   },
-  "author": "Pranay Gupta",
+  "author": "Rugung Daimary",
   "bugs": {
-    "url": "https://github.com/thepranaygupta/react-tailwind-css-starter-pack/issues"
+    "url": "https://github.com/RugungDaimary/react-tailwind-css-starter-pack-main"
   },
   "scripts": {
     "start": "react-scripts start",
