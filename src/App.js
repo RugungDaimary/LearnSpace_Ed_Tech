@@ -109,8 +109,8 @@ function App() {
             </PrivateRoute>
           }
         >
-          <Route path="dashboard/my-profile" element={<MyProfile />} />
-          <Route path="dashboard/settings" element={<Setting />} />
+        <Route path="dashboard/my-profile" element={<MyProfile />} />
+        <Route path="dashboard/settings" element={<Setting />} />
           {user?.accountType === ACCOUNT_TYPE.STUDENT && (
             <>
               <Route path="dashboard/cart" element={<Cart />} />
