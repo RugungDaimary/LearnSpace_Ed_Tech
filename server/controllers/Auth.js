@@ -250,7 +250,7 @@ exports.changePassword = async (req, res) => {
 				message: "New Password cannot be same as Old Password",
 			});
 		}
-		
+
 		if (!isPasswordMatch) {
 			// If old password does not match, return a 401 (Unauthorized) error
 			return res
@@ -279,7 +279,7 @@ exports.changePassword = async (req, res) => {
 		try {
 			const emailResponse = await mailSender(
 				updatedUserDetails.email,
-				"Study Notion - Password Updated",
+				"LearnSpace - Password Updated",
 				passwordUpdated(
 					updatedUserDetails.email,
 					`Password updated successfully for ${updatedUserDetails.firstName} ${updatedUserDetails.lastName}`

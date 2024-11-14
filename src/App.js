@@ -37,12 +37,12 @@ import { RiWifiOffLine } from "react-icons/ri";
 import AdminPannel from "./Components/core/Dashboard/AdminPannel";
 
 function App() {
-  // console.log = function () {};
+
   const user = useSelector((state) => state.profile.user);
   const progress = useSelector((state) => state.loadingBar);
   const dispatch = useDispatch();
   return (
-    
+
     <div className=" w-screen min-h-screen bg-richblack-900 flex flex-col font-inter">
       {/* on the top of navbar, small progress bar */}
       <LoadingBar

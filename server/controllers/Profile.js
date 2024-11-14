@@ -102,11 +102,11 @@ exports.getEnrolledCourses=async (req,res) => {
             });
         }
         const enrolledCourses = await User.findById(id).populate({
-			path : "courses",
+			  path : "courses",
 				populate : {
-					path: "courseContent",
-			}
-		}
+				  path: "courseContent",
+			  }
+		  }
 		).populate("courseProgress").exec();
         // console.log(enrolledCourses);
         res.status(200).json({
@@ -126,7 +126,7 @@ exports.getEnrolledCourses=async (req,res) => {
 exports.updateDisplayPicture = async (req, res) => {
 	try {
 
-		const id = req.user.id;
+	const id = req.user.id;
 	const user = await User.findById(id);
 	if (!user) {
 		return res.status(404).json({
@@ -154,13 +154,13 @@ exports.updateDisplayPicture = async (req, res) => {
         message: "Image updated successfully",
         data: updatedImage,
     });
-		
+
 	} catch (error) {
 		return res.status(500).json({
             success: false,
             message: error.message,
         });
-		
+
 	}
 
 
